@@ -1,0 +1,14 @@
+[Unit]
+Description=Home Automation Helpers
+Documentation=https://github.com/jonathas/home-automation-helpers
+After=network-online.target
+
+[Service]
+User=pi
+Restart=on-failure
+
+WorkingDirectory=/home/pi/home-automation-helpers
+ExecStart=/home/pi/home-automation-helpers/home-automation-helpers
+
+[Install]
+WantedBy=multi-user.target
