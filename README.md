@@ -8,6 +8,14 @@ It's intended to run locally and be called locally.
 
 A Postman collection can be found inside of the /docs directory
 
+## Compiling
+
+For running it on a Raspberry Pi, compile it to arm:
+
+```bash
+env GOOS=linux GOARCH=arm GOARM=5 go build
+```
+
 ## Configuration
 
 - Set your VoiceMonkey token in the .env file
